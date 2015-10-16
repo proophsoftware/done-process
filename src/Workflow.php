@@ -50,7 +50,7 @@ final class Workflow
      */
     public function __invoke(Message $chapterCommand, $data, ChapterLogger $chapterLogger, callable $done = null)
     {
-        $done = $done ?: function () {};
+        $done = $done ?: function (Message $chapterCommand, $data, ChapterLogger $chapterLogger) { return $data; };
 
         $next = new Next($this->pipeline, $done);
 
