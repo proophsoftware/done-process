@@ -1,5 +1,5 @@
 {
-    "name": "prooph/processing",
+    "name": "proophsoftware/processing",
     "description": "Workflow Processing Tools",
     "type": "library",
     "keywords": [
@@ -9,16 +9,6 @@
     ],
     "homepage": "https://github.com/proophsoftware/processing",
     "license": "BSD-3-Clause",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/proophsoftware/done-shared"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/proophsoftware/done-chapter-logger"
-        }
-    ],
     "require": {
         "php": ">=5.5",
         "proophsoftware/done-shared": "dev-master",
