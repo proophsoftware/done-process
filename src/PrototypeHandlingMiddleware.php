@@ -24,11 +24,11 @@ interface PrototypeHandlingMiddleware
 {
     /**
      * @param Message $chapterCommand
-     * @param Prototype $data
+     * @param Prototype $prototype
      * @param ChapterLogger $chapterLogger
      * @param callable $next
      * @return Type the processed data
      */
-    public function __invoke(Message $chapterCommand, Prototype $data, ChapterLogger $chapterLogger, callable $next);
+    public function __invoke(Message $chapterCommand, Prototype $prototype, ChapterLogger $chapterLogger, callable $next);
 }
  
