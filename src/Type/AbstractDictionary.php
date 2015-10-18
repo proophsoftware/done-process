@@ -9,12 +9,12 @@
  * Date: 11.07.14 - 19:33
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 use Assert\Assertion;
 use Codeliner\Comparison\EqualsBuilder;
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
 
 abstract class AbstractDictionary implements DictionaryType
 {
@@ -34,7 +34,7 @@ abstract class AbstractDictionary implements DictionaryType
     protected $description;
 
     /**
-     * Provides access to a prototype of the Prooph\ProcessingType\Type (empty Object, with a Description and PrototypeProperties)
+     * Provides access to a prototype of the Prooph\Done\Process\Type\Type (empty Object, with a Description and PrototypeProperties)
      *
      * @return Prototype
      */
@@ -211,8 +211,8 @@ abstract class AbstractDictionary implements DictionaryType
     /**
      * Get properties of the type indexed by property name
      *
-     * A Prooph\ProcessingType\SingleValue has no properties, so you'll get an empty list
-     * A Prooph\ProcessingType\Collection has a numeric index but all elements are of the same type
+     * A Prooph\Done\Process\Type\SingleValue has no properties, so you'll get an empty list
+     * A Prooph\Done\Process\Type\Collection has a numeric index but all elements are of the same type
      * so properties() returns a list containing one property with name item that describes the elements
      * but has no value.
      *
@@ -242,7 +242,7 @@ abstract class AbstractDictionary implements DictionaryType
     }
 
     /**
-     * @return mixed Type of the value is defined in Prooph\ProcessingType\Description of the type
+     * @return mixed Type of the value is defined in Prooph\Done\Process\Type\Description of the type
      */
     public function value()
     {

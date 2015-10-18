@@ -9,15 +9,15 @@
  * Date: 28.01.15 - 23:32
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\StringOrNull;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\StringOrNull;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class StringOrNullTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class StringOrNullTest extends TestCase
@@ -30,7 +30,7 @@ final class StringOrNullTest extends TestCase
     {
         $valOrNull = StringOrNull::fromNativeValue($possibleValue);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\StringOrNull', $valOrNull);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\StringOrNull', $valOrNull);
         $this->assertEquals($possibleValue, $valOrNull->value());
 
         $asString = $valOrNull->toString();
@@ -94,7 +94,7 @@ final class StringOrNullTest extends TestCase
     {
         $stringPrototype = StringOrNull::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\StringOrNull', $stringPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\StringOrNull', $stringPrototype->of());
 
         $description = $stringPrototype->typeDescription();
 

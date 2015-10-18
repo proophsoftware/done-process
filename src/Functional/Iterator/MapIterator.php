@@ -9,12 +9,12 @@
  * Date: 30.01.15 - 08:19
  */
 
-namespace Prooph\Processing\Functional\Iterator;
+namespace Prooph\Done\Process\Functional\Iterator;
 
 /**
  * Class MapIterator
  *
- * @package Prooph\Processing\Functional\Iterator
+ * @package Prooph\Done\Process\Functional\Iterator
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class MapIterator extends \IteratorIterator

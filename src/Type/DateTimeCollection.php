@@ -9,11 +9,11 @@
  * Date: 11.07.14 - 19:06
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Description\DescriptionRegistry;
-use Prooph\Processing\Type\Description\NativeType;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\DescriptionRegistry;
+use Prooph\Done\Process\Type\Description\NativeType;
 
 class DateTimeCollection extends AbstractCollection
 {

@@ -9,17 +9,17 @@
  * Date: 10.07.14 - 21:40
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\Exception\InvalidTypeException;
-use Prooph\Processing\Type\String;
-use Prooph\Processing\Type\StringCollection;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
+use Prooph\Done\Process\Type\String;
+use Prooph\Done\Process\Type\StringCollection;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class StringCollectionTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class StringCollectionTest extends TestCase
@@ -35,7 +35,7 @@ class StringCollectionTest extends TestCase
             "Strawberry"
         ));
 
-        $this->assertInstanceOf('Prooph\Processing\Type\StringCollection', $fruits);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\StringCollection', $fruits);
 
         $fruitList = array();
 
@@ -103,9 +103,9 @@ class StringCollectionTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('Prooph\Processing\Type\StringCollection', $prototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\StringCollection', $prototype->of());
     }
 
     /**
@@ -122,9 +122,9 @@ class StringCollectionTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('Prooph\Processing\Type\String', $prototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\String', $prototype->of());
     }
 
     /**
@@ -159,7 +159,7 @@ class StringCollectionTest extends TestCase
     {
         $stringCol = StringCollection::fromNativeValue(array("Apple", "Banana"));
 
-        $this->assertEquals('Prooph\Processing\Type\String',$stringCol->property('item')->value());
+        $this->assertEquals('Prooph\Done\Process\Type\String',$stringCol->property('item')->value());
         $this->assertNull($stringCol->property('Apple'));
     }
 }

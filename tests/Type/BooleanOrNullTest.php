@@ -9,16 +9,16 @@
  * Date: 28.01.15 - 22:14
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\BooleanOrNull;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\BooleanOrNull;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class BooleanOrNullTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class BooleanOrNullTest extends TestCase
@@ -31,7 +31,7 @@ final class BooleanOrNullTest extends TestCase
     {
         $boolOrNull = BooleanOrNull::fromNativeValue($possibleValue);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\BooleanOrNull', $boolOrNull);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\BooleanOrNull', $boolOrNull);
         $this->assertSame($possibleValue, $boolOrNull->value());
 
         $asString = $boolOrNull->toString();
@@ -79,9 +79,9 @@ final class BooleanOrNullTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('Prooph\Processing\Type\BooleanOrNull', $prototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\BooleanOrNull', $prototype->of());
 
     }
 
@@ -106,7 +106,7 @@ final class BooleanOrNullTest extends TestCase
     {
         $boolPrototype = BooleanOrNull::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\BooleanOrNull', $boolPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\BooleanOrNull', $boolPrototype->of());
 
         $description = $boolPrototype->typeDescription();
 

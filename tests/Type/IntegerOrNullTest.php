@@ -9,10 +9,10 @@
  * Date: 28.01.15 - 23:27
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\IntegerOrNull;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\IntegerOrNull;
+use ProophTest\Done\Process\TestCase;
 
 final class IntegerOrNullTest extends TestCase
 {
@@ -24,7 +24,7 @@ final class IntegerOrNullTest extends TestCase
     {
         $valOrNull = IntegerOrNull::fromNativeValue($possibleValue);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\IntegerOrNull', $valOrNull);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\IntegerOrNull', $valOrNull);
         $this->assertEquals($possibleValue, $valOrNull->value());
 
         $asString = $valOrNull->toString();
@@ -92,11 +92,11 @@ final class IntegerOrNullTest extends TestCase
     {
         $intPrototype = IntegerOrNull::prototype();
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $intPrototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $intPrototype);
 
         $description = $intPrototype->typeDescription();
 
-        $this->assertEquals('Prooph\Processing\Type\IntegerOrNull', $intPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\IntegerOrNull', $intPrototype->of());
         $this->assertEquals('Integer', $description->label());
         $this->assertEquals('integer', $description->nativeType());
         $this->assertFalse($description->hasIdentifier());

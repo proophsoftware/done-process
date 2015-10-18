@@ -8,9 +8,9 @@
  * 
  * Date: 07.07.14 - 21:07
  */
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
-use Prooph\Processing\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\Description;
 
 /**
  * Interface Type
@@ -22,7 +22,7 @@ use Prooph\Processing\Type\Description\Description;
 interface Type extends \JsonSerializable
 {
     /**
-     * Provides access to a prototype of the Prooph\ProcessingType\Type (empty Object, with a Description and PrototypeProperties)
+     * Provides access to a prototype of the Prooph\Done\Process\Type\Type (empty Object, with a Description and PrototypeProperties)
      *
      * @return Prototype
      */
@@ -60,10 +60,10 @@ interface Type extends \JsonSerializable
     /**
      * Get properties of the type indexed by property name
      *
-     * A Prooph\ProcessingType\SingleValue has no properties, so you'll get an empty list
-     * A Prooph\ProcessingType\Collection has a numeric index but all elements are of the same type
+     * A Prooph\Done\Process\Type\SingleValue has no properties, so you'll get an empty list
+     * A Prooph\Done\Process\Type\Collection has a numeric index but all elements are of the same type
      * so properties() returns a list containing one property with name item
-     * which itself is of type Prooph\ProcessingType\ItemClass
+     * which itself is of type Prooph\Done\Process\Type\ItemClass
      *
      * @return Property[]
      */
@@ -82,7 +82,7 @@ interface Type extends \JsonSerializable
     public function property($name);
 
     /**
-     * @return mixed Type of the value is defined in Prooph\ProcessingType\Description of the type
+     * @return mixed Type of the value is defined in Prooph\Done\Process\Type\Description of the type
      */
     public function value();
 

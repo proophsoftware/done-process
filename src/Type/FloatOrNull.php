@@ -9,7 +9,7 @@
  * Date: 28.01.15 - 23:01
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 class FloatOrNull extends Float implements Optional
 {

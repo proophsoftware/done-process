@@ -8,42 +8,42 @@
  * 
  * Date: 07.07.14 - 21:17
  */
-namespace Prooph\Processing\Type\Description;
+namespace Prooph\Done\Process\Type\Description;
 
 use Assert\Assertion;
 
 /**
  * Class Description
  *
- * Describes the structure of a Prooph\ProcessingType
+ * Describes the structure of a Prooph\Done\Process\Type
  *
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class Description
 {
     /**
-     * Display name of the Prooph\ProcessingType
+     * Display name of the Prooph\Done\Process\Type
      *
      * @var string
      */
     protected $label;
 
     /**
-     * Says whether related Prooph\ProcessingType has an identifier or not
+     * Says whether related Prooph\Done\Process\Type has an identifier or not
      *
      * @var bool
      */
     protected $hasIdentifier = false;
 
     /**
-     * Name of the identifier property if Prooph\ProcessingType has an identifier
+     * Name of the identifier property if Prooph\Done\Process\Type has an identifier
      *
      * @var string
      */
     protected $identifierName;
 
     /**
-     * One of the types defined in Prooph\ProcessingType\Description\NativeType
+     * One of the types defined in Prooph\Done\Process\Type\Description\NativeType
      *
      * @var string
      */

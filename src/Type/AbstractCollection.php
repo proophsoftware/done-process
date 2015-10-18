@@ -9,15 +9,15 @@
  * Date: 10.07.14 - 20:48
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
 
 /**
  * Class Collection
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 abstract class AbstractCollection extends \IteratorIterator implements CollectionType
@@ -42,7 +42,7 @@ abstract class AbstractCollection extends \IteratorIterator implements Collectio
      */
     protected $valueCache;
     /**
-     * Provides access to a prototype of the Prooph\ProcessingType\Type (empty Object, with a Description and PrototypeProperties)
+     * Provides access to a prototype of the Prooph\Done\Process\Type\Type (empty Object, with a Description and PrototypeProperties)
      *
      * @return Prototype
      */
@@ -82,7 +82,7 @@ abstract class AbstractCollection extends \IteratorIterator implements Collectio
 
     /**
      * @param mixed $value
-     * @throws Exception\InvalidTypeException If value is not an array containing only items of related Prooph\ProcessingType
+     * @throws Exception\InvalidTypeException If value is not an array containing only items of related Prooph\Done\Process\Type
      * @return CollectionType
      */
     public static function fromNativeValue($value)
@@ -117,7 +117,7 @@ abstract class AbstractCollection extends \IteratorIterator implements Collectio
 
     /**
      * @param \Traversable $value
-     * @throws Exception\InvalidTypeException If value is not an array containing only items of related Prooph\ProcessingType
+     * @throws Exception\InvalidTypeException If value is not an array containing only items of related Prooph\Done\Process\Type
      */
     public function __construct(\Traversable $value)
     {
@@ -163,8 +163,8 @@ abstract class AbstractCollection extends \IteratorIterator implements Collectio
     /**
      * Get properties of the type indexed by property name
      *
-     * A Prooph\ProcessingType\SingleValue has no properties, so you'll get an empty list
-     * A Prooph\ProcessingType\Collection has a numeric index but all elements are of the same type
+     * A Prooph\Done\Process\Type\SingleValue has no properties, so you'll get an empty list
+     * A Prooph\Done\Process\Type\Collection has a numeric index but all elements are of the same type
      * so properties() returns a list containing one property with name item that describes the elements
      * but has no value.
      *

@@ -9,15 +9,15 @@
  * Date: 28.01.15 - 23:05
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\FloatOrNull;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\FloatOrNull;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class FloatOrNullTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class FloatOrNullTest extends TestCase
@@ -30,7 +30,7 @@ final class FloatOrNullTest extends TestCase
     {
         $valOrNull = FloatOrNull::fromNativeValue($possibleValue);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\FloatOrNull', $valOrNull);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\FloatOrNull', $valOrNull);
         $this->assertEquals($possibleValue, $valOrNull->value());
 
         $asString = $valOrNull->toString();
@@ -90,7 +90,7 @@ final class FloatOrNullTest extends TestCase
     {
         $floatPrototype = FloatOrNull::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\FloatOrNull', $floatPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\FloatOrNull', $floatPrototype->of());
 
         $description = $floatPrototype->typeDescription();
 

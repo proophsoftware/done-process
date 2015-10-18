@@ -9,7 +9,7 @@
  * Date: 10.07.14 - 20:57
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Interface CollectionType
@@ -18,7 +18,7 @@ namespace Prooph\Processing\Type;
  * so that it is possible to iterate over the items in the collection and get the inner iterator.
  * AbstractCollection provides a basic implementation.
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 interface CollectionType extends Type

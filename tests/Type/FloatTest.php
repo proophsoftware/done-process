@@ -9,15 +9,15 @@
  * Date: 08.07.14 - 21:33
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\Float;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\Float;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class FloatTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class FloatTest extends TestCase
@@ -29,7 +29,7 @@ class FloatTest extends TestCase
     {
         $float = Float::fromNativeValue(10.1);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Float', $float);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Float', $float);
         $this->assertEquals(10.1, $float->value());
     }
 
@@ -40,7 +40,7 @@ class FloatTest extends TestCase
     {
         $float = Float::fromString("10.1");
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Float', $float);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Float', $float);
         $this->assertSame(10.1, $float->value());
     }
 
@@ -49,7 +49,7 @@ class FloatTest extends TestCase
      */
     public function it_rejects_value_if_it_is_not_a_float_or_integer()
     {
-        $this->setExpectedException('Prooph\Processing\Type\Exception\InvalidTypeException');
+        $this->setExpectedException('Prooph\Done\Process\Type\Exception\InvalidTypeException');
 
         Float::fromNativeValue("10.1");
     }
@@ -95,7 +95,7 @@ class FloatTest extends TestCase
     {
         $floatPrototype = Float::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\Float', $floatPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\Float', $floatPrototype->of());
 
         $description = $floatPrototype->typeDescription();
 

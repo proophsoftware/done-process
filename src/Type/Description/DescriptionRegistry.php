@@ -9,12 +9,12 @@
  * Date: 11.01.15 - 23:52
  */
 
-namespace Prooph\Processing\Type\Description;
+namespace Prooph\Done\Process\Type\Description;
 
 /**
  * Class DescriptionRegistry
  *
- * @package Prooph\Processing\Type\Description
+ * @package Prooph\Done\Process\Type\Description
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class DescriptionRegistry 

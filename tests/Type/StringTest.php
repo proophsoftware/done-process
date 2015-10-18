@@ -9,15 +9,15 @@
  * Date: 08.07.14 - 21:33
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\String;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\String;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class StringTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class StringTest extends TestCase
@@ -29,7 +29,7 @@ class StringTest extends TestCase
     {
         $string = String::fromNativeValue("Hello world");
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $string);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $string);
         $this->assertEquals("Hello world", $string->value());
     }
 
@@ -38,7 +38,7 @@ class StringTest extends TestCase
      */
     public function it_rejects_value_if_it_is_not_a_sting()
     {
-        $this->setExpectedException('Prooph\Processing\Type\Exception\InvalidTypeException');
+        $this->setExpectedException('Prooph\Done\Process\Type\Exception\InvalidTypeException');
 
         String::fromNativeValue(10);
     }
@@ -84,7 +84,7 @@ class StringTest extends TestCase
     {
         $stringPrototype = String::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\String', $stringPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\String', $stringPrototype->of());
 
         $description = $stringPrototype->typeDescription();
 
@@ -95,7 +95,7 @@ class StringTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Prooph\Processing\Type\Exception\InvalidTypeException
+     * @expectedException \Prooph\Done\Process\Type\Exception\InvalidTypeException
      */
     public function it_only_allows_utf8_encoded_string()
     {

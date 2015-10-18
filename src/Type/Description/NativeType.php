@@ -8,7 +8,7 @@
  * 
  * Date: 07.07.14 - 22:02
  */
-namespace Prooph\Processing\Type\Description;
+namespace Prooph\Done\Process\Type\Description;
 
 /**
  * Definition Class for native types

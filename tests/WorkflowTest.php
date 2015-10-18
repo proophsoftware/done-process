@@ -8,22 +8,22 @@
  * 
  * Date: 10/16/15 - 9:17 PM
  */
-namespace ProophTest\Processing;
+namespace ProophTest\Done\Process;
 
 use Prooph\Common\Messaging\Message;
 use Prooph\Done\ChapterLogger\ChapterLogger;
 use Prooph\Done\ChapterLogger\DoneBackend;
 use Prooph\Done\Shared\Metadata;
-use Prooph\Processing\Functional\Func;
-use Prooph\Processing\Workflow;
-use ProophTest\Processing\Mock\AddressDictionary;
-use ProophTest\Processing\Mock\UserDictionary;
+use Prooph\Done\Process\Functional\Func;
+use Prooph\Done\Process\Workflow;
+use ProophTest\Done\Process\Mock\AddressDictionary;
+use ProophTest\Done\Process\Mock\UserDictionary;
 use Rhumsaa\Uuid\Uuid;
 
 /**
  * Class WorkflowTest
  *
- * @package ProophTest\Processing
+ * @package ProophTest\Done\Process
  */
 final class WorkflowTest extends TestCase
 {

@@ -9,7 +9,7 @@
  * Date: 11.07.14 - 19:39
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 interface DictionaryType extends Type
 {

@@ -9,14 +9,14 @@
  * Date: 28.01.15 - 20:54
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Interface Optional
  *
  * Marker interface for types that can have null as value
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 interface Optional 

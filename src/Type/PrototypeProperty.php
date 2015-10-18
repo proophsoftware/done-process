@@ -9,12 +9,12 @@
  * Date: 09.07.14 - 21:39
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Class PrototypeProperty
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class PrototypeProperty 

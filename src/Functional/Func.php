@@ -6,20 +6,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Prooph\Processing\Functional;
+namespace Prooph\Done\Process\Functional;
 
-use Prooph\Processing\Functional\Iterator\MapIterator;
-use Prooph\Processing\Message\Payload;
-use Prooph\Processing\Type\AbstractCollection;
-use Prooph\Processing\Type\CollectionType;
-use Prooph\Processing\Type\Type;
+use Prooph\Done\Process\Functional\Iterator\MapIterator;
+use Prooph\Done\Process\Message\Payload;
+use Prooph\Done\Process\Type\AbstractCollection;
+use Prooph\Done\Process\Type\CollectionType;
+use Prooph\Done\Process\Type\Type;
 
 /**
  * Class Func
  *
  * Util class to provide basic functions for payload manipulation
  *
- * @package Prooph\Processing\Functional
+ * @package Prooph\Done\Process\Functional
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class Func

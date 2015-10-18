@@ -9,17 +9,17 @@
  * Date: 08.07.14 - 22:49
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Description\DescriptionRegistry;
-use Prooph\Processing\Type\Description\NativeType;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\DescriptionRegistry;
+use Prooph\Done\Process\Type\Description\NativeType;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
 
 /**
  * Class String
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class String extends SingleValue

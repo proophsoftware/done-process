@@ -9,15 +9,15 @@
  * Date: 08.07.14 - 21:33
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\Integer;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\Integer;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class IntegerTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class IntegerTest extends TestCase
@@ -29,7 +29,7 @@ class IntegerTest extends TestCase
     {
         $int = Integer::fromNativeValue(10);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $int);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $int);
         $this->assertEquals(10, $int->value());
     }
 
@@ -40,7 +40,7 @@ class IntegerTest extends TestCase
     {
         $int = Integer::fromString("10");
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $int);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $int);
         $this->assertSame(10, $int->value());
     }
 
@@ -49,7 +49,7 @@ class IntegerTest extends TestCase
      */
     public function it_rejects_value_if_it_is_not_an_integer()
     {
-        $this->setExpectedException('Prooph\Processing\Type\Exception\InvalidTypeException');
+        $this->setExpectedException('Prooph\Done\Process\Type\Exception\InvalidTypeException');
 
         Integer::fromNativeValue(array(10));
     }
@@ -95,11 +95,11 @@ class IntegerTest extends TestCase
     {
         $intPrototype = Integer::prototype();
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $intPrototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $intPrototype);
 
         $description = $intPrototype->typeDescription();
 
-        $this->assertEquals('Prooph\Processing\Type\Integer', $intPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\Integer', $intPrototype->of());
         $this->assertEquals('Integer', $description->label());
         $this->assertEquals('integer', $description->nativeType());
         $this->assertFalse($description->hasIdentifier());

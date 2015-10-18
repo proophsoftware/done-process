@@ -9,15 +9,15 @@
  * Date: 09.07.14 - 21:34
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 use Assert\Assertion;
-use Prooph\Processing\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\Description;
 
 /**
  * Class Prototype
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class Prototype 
@@ -44,8 +44,8 @@ class Prototype
      */
     public function __construct($relatedTypeClass, Description $descriptionOfType, array $typeProperties)
     {
-        Assertion::implementsInterface($relatedTypeClass, 'Prooph\Processing\\Type\Type');
-        foreach($typeProperties as $propertyOfType) Assertion::isInstanceOf($propertyOfType, 'Prooph\Processing\Type\PrototypeProperty');
+        Assertion::implementsInterface($relatedTypeClass, 'Prooph\Done\Process\\Type\Type');
+        foreach($typeProperties as $propertyOfType) Assertion::isInstanceOf($propertyOfType, 'Prooph\Done\Process\Type\PrototypeProperty');
 
         $this->relatedTypeClass = $relatedTypeClass;
         $this->descriptionOfType = $descriptionOfType;

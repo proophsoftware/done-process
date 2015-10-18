@@ -9,16 +9,16 @@
  * Date: 08.07.14 - 21:33
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\DateTime;
-use Prooph\Processing\Type\Integer;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\DateTime;
+use Prooph\Done\Process\Type\Integer;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class DateTimeTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class DateTimeTest extends TestCase
@@ -32,7 +32,7 @@ class DateTimeTest extends TestCase
 
         $dateTime = DateTime::fromNativeValue($nativeDateTime);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\DateTime', $dateTime);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\DateTime', $dateTime);
         $this->assertEquals($nativeDateTime->format('Y-m-d H:i:s'), $dateTime->value()->format('Y-m-d H:i:s'));
     }
 
@@ -61,7 +61,7 @@ class DateTimeTest extends TestCase
     {
         $dateTime = DateTime::fromString('2014-07-09 20:50:10');
 
-        $this->assertInstanceOf('Prooph\Processing\Type\DateTime', $dateTime);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\DateTime', $dateTime);
         $this->assertSame('2014-07-09 20:50:10', $dateTime->value()->format('Y-m-d H:i:s'));
     }
 
@@ -70,7 +70,7 @@ class DateTimeTest extends TestCase
      */
     public function it_rejects_value_if_it_is_not_a_date_time()
     {
-        $this->setExpectedException('Prooph\Processing\Type\Exception\InvalidTypeException');
+        $this->setExpectedException('Prooph\Done\Process\Type\Exception\InvalidTypeException');
 
         DateTime::fromNativeValue('2014-07-09 20:50:10');
     }
@@ -106,7 +106,7 @@ class DateTimeTest extends TestCase
     {
         $dateTimePrototype = DateTime::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\DateTime', $dateTimePrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\DateTime', $dateTimePrototype->of());
 
         $description = $dateTimePrototype->typeDescription();
 

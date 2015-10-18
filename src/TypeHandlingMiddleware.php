@@ -9,16 +9,16 @@
  * Date: 10/16/15 - 7:57 PM
  */
 
-namespace Prooph\Processing;
+namespace Prooph\Done\Process;
 
 use Prooph\Common\Messaging\Message;
 use Prooph\Done\ChapterLogger\ChapterLogger;
-use Prooph\Processing\Type\Type;
+use Prooph\Done\Process\Type\Type;
 
 /**
  * Interface TypeHandlingMiddleware
  *
- * @package Prooph\Processing
+ * @package Prooph\Done\Process
  */
 interface TypeHandlingMiddleware
 {

@@ -9,10 +9,10 @@
  * Date: 11.07.14 - 19:25
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\DateTimeCollection;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\DateTimeCollection;
+use ProophTest\Done\Process\TestCase;
 
 class DateTimeCollectionTest extends TestCase
 {
@@ -26,7 +26,7 @@ class DateTimeCollectionTest extends TestCase
             new \DateTime("2014-07-11 20:55:10"),
         ));
 
-        $this->assertInstanceOf('Prooph\Processing\Type\DateTimeCollection', $dates);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\DateTimeCollection', $dates);
 
         $dateList = array();
 

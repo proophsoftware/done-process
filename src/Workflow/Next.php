@@ -8,7 +8,7 @@
  * 
  * Date: 10/16/15 - 8:29 PM
  */
-namespace Prooph\Processing\Workflow;
+namespace Prooph\Done\Process\Workflow;
 
 use Prooph\Common\Messaging\Message;
 use Prooph\Done\ChapterLogger\ChapterLogger;
@@ -18,7 +18,7 @@ use Prooph\Done\ChapterLogger\ChapterLogger;
  *
  * Implementation detail of the Workflow pipeline
  *
- * @package Prooph\Processing\Workflow
+ * @package Prooph\Done\Process\Workflow
  */
 final class Next
 {

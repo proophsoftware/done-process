@@ -9,16 +9,16 @@
  * Date: 09.12.14 - 18:29
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\Unknown;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\Unknown;
+use ProophTest\Done\Process\TestCase;
 use Zend\Filter\Null;
 
 /**
  * Class UnknownTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class UnknownTest extends TestCase
@@ -64,7 +64,7 @@ class UnknownTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Prooph\Processing\Type\Exception\InvalidTypeException
+     * @expectedException \Prooph\Done\Process\Type\Exception\InvalidTypeException
      * @dataProvider provideInvalidTypes
      */
     public function it_can_not_be_initialized_with_invalid_types($value)

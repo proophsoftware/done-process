@@ -9,12 +9,12 @@
  * Date: 28.01.15 - 22:52
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Class DateTimeOrNull
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class DateTimeOrNull extends DateTime implements Optional

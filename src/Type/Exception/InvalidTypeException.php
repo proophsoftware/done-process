@@ -9,9 +9,9 @@
  * Date: 09.07.14 - 21:17
  */
 
-namespace Prooph\Processing\Type\Exception;
+namespace Prooph\Done\Process\Type\Exception;
 
-use Prooph\Processing\Type\Prototype;
+use Prooph\Done\Process\Type\Prototype;
 
 class InvalidTypeException extends \InvalidArgumentException
 {
@@ -22,7 +22,7 @@ class InvalidTypeException extends \InvalidArgumentException
 
     /**
      * @param \InvalidArgumentException $exception
-     * @param \Prooph\Processing\Type\Prototype $prototype
+     * @param \Prooph\Done\Process\Type\Prototype $prototype
      * @return static
      */
     public static function fromInvalidArgumentExceptionAndPrototype(\InvalidArgumentException $exception, Prototype $prototype)

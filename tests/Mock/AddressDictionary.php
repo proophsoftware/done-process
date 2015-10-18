@@ -9,13 +9,13 @@
  * Date: 11.07.14 - 20:18
  */
 
-namespace ProophTest\Processing\Mock;
+namespace ProophTest\Done\Process\Mock;
 
-use Prooph\Processing\Type\AbstractDictionary;
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Description\NativeType;
-use Prooph\Processing\Type\Integer;
-use Prooph\Processing\Type\String;
+use Prooph\Done\Process\Type\AbstractDictionary;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\NativeType;
+use Prooph\Done\Process\Type\Integer;
+use Prooph\Done\Process\Type\String;
 
 class AddressDictionary extends AbstractDictionary
 {

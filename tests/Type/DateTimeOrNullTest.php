@@ -9,10 +9,10 @@
  * Date: 28.01.15 - 22:54
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\DateTimeOrNull;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\DateTimeOrNull;
+use ProophTest\Done\Process\TestCase;
 
 final class DateTimeOrNullTest extends TestCase
 {
@@ -24,7 +24,7 @@ final class DateTimeOrNullTest extends TestCase
     {
         $valOrNull = DateTimeOrNull::fromNativeValue($possibleValue);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\DateTimeOrNull', $valOrNull);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\DateTimeOrNull', $valOrNull);
         $this->assertEquals($possibleValue, $valOrNull->value());
 
         $asString = $valOrNull->toString();
@@ -76,7 +76,7 @@ final class DateTimeOrNullTest extends TestCase
     {
         $dateTimePrototype = DateTimeOrNull::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\DateTimeOrNull', $dateTimePrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\DateTimeOrNull', $dateTimePrototype->of());
 
         $description = $dateTimePrototype->typeDescription();
 

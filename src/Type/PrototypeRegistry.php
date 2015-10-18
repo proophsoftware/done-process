@@ -9,12 +9,12 @@
  * Date: 03.12.14 - 19:52
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Class PrototypeRegistry
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class PrototypeRegistry 

@@ -9,7 +9,7 @@
  * Date: 29.01.15 - 19:53
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
 final class ItemClassTest 
 {

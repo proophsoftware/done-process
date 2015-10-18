@@ -9,17 +9,17 @@
  * Date: 11.07.14 - 20:35
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\Exception\InvalidTypeException;
-use ProophTest\Processing\TestCase;
-use ProophTest\Processing\Mock\AddressDictionary;
-use ProophTest\Processing\Mock\UserDictionary;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
+use ProophTest\Done\Process\TestCase;
+use ProophTest\Done\Process\Mock\AddressDictionary;
+use ProophTest\Done\Process\Mock\UserDictionary;
 
 /**
  * Class AbstractDictionaryTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class AbstractDictionaryTest extends TestCase
@@ -40,31 +40,31 @@ class AbstractDictionaryTest extends TestCase
             )
         ));
 
-        $this->assertInstanceOf('ProophTest\Processing\Mock\UserDictionary', $user);
+        $this->assertInstanceOf('ProophTest\Done\Process\Mock\UserDictionary', $user);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $user->property("id")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $user->property("id")->type());
 
         $this->assertEquals(1, $user->property("id")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $user->property("name")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $user->property("name")->type());
 
         $this->assertEquals("Alex", $user->property("name")->value());
 
-        $this->assertInstanceOf('ProophTest\Processing\Mock\AddressDictionary', $user->property("address")->type());
+        $this->assertInstanceOf('ProophTest\Done\Process\Mock\AddressDictionary', $user->property("address")->type());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $user->property("address")->property("street")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $user->property("address")->property("street")->type());
 
         $this->assertEquals("Main Street", $user->property("address")->property("street")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $user->property("address")->property("streetNumber")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $user->property("address")->property("streetNumber")->type());
 
         $this->assertEquals(10, $user->property("address")->property("streetNumber")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $user->property("address")->property("zip")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $user->property("address")->property("zip")->type());
 
         $this->assertEquals("12345", $user->property("address")->property("zip")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $user->property("address")->property("city")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $user->property("address")->property("city")->type());
 
         $this->assertEquals("Test City", $user->property("address")->property("city")->value());
     }
@@ -89,31 +89,31 @@ class AbstractDictionaryTest extends TestCase
 
         $sameUser = UserDictionary::fromString($userString);
 
-        $this->assertInstanceOf('ProophTest\Processing\Mock\UserDictionary', $sameUser);
+        $this->assertInstanceOf('ProophTest\Done\Process\Mock\UserDictionary', $sameUser);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $sameUser->property("id")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $sameUser->property("id")->type());
 
         $this->assertEquals(1, $sameUser->property("id")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("name")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("name")->type());
 
         $this->assertEquals("Alex", $sameUser->property("name")->value());
 
-        $this->assertInstanceOf('ProophTest\Processing\Mock\AddressDictionary', $sameUser->property("address")->type());
+        $this->assertInstanceOf('ProophTest\Done\Process\Mock\AddressDictionary', $sameUser->property("address")->type());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("address")->property("street")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("address")->property("street")->type());
 
         $this->assertEquals("Main Street", $sameUser->property("address")->property("street")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $sameUser->property("address")->property("streetNumber")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $sameUser->property("address")->property("streetNumber")->type());
 
         $this->assertEquals(10, $sameUser->property("address")->property("streetNumber")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("address")->property("zip")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("address")->property("zip")->type());
 
         $this->assertEquals("12345", $sameUser->property("address")->property("zip")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("address")->property("city")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("address")->property("city")->type());
 
         $this->assertEquals("Test City", $sameUser->property("address")->property("city")->value());
     }
@@ -140,31 +140,31 @@ class AbstractDictionaryTest extends TestCase
 
         $sameUser = UserDictionary::fromJsonDecodedData($encodedUserData);
 
-        $this->assertInstanceOf('ProophTest\Processing\Mock\UserDictionary', $sameUser);
+        $this->assertInstanceOf('ProophTest\Done\Process\Mock\UserDictionary', $sameUser);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $sameUser->property("id")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $sameUser->property("id")->type());
 
         $this->assertEquals(1, $sameUser->property("id")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("name")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("name")->type());
 
         $this->assertEquals("Alex", $sameUser->property("name")->value());
 
-        $this->assertInstanceOf('ProophTest\Processing\Mock\AddressDictionary', $sameUser->property("address")->type());
+        $this->assertInstanceOf('ProophTest\Done\Process\Mock\AddressDictionary', $sameUser->property("address")->type());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("address")->property("street")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("address")->property("street")->type());
 
         $this->assertEquals("Main Street", $sameUser->property("address")->property("street")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Integer', $sameUser->property("address")->property("streetNumber")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Integer', $sameUser->property("address")->property("streetNumber")->type());
 
         $this->assertEquals(10, $sameUser->property("address")->property("streetNumber")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("address")->property("zip")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("address")->property("zip")->type());
 
         $this->assertEquals("12345", $sameUser->property("address")->property("zip")->value());
 
-        $this->assertInstanceOf('Prooph\Processing\Type\String', $sameUser->property("address")->property("city")->type());
+        $this->assertInstanceOf('Prooph\Done\Process\Type\String', $sameUser->property("address")->property("city")->type());
 
         $this->assertEquals("Test City", $sameUser->property("address")->property("city")->value());
     }
@@ -182,9 +182,9 @@ class AbstractDictionaryTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('ProophTest\Processing\Mock\UserDictionary', $prototype->of());
+        $this->assertEquals('ProophTest\Done\Process\Mock\UserDictionary', $prototype->of());
     }
 
     /**
@@ -208,9 +208,9 @@ class AbstractDictionaryTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('ProophTest\Processing\Mock\UserDictionary', $prototype->of());
+        $this->assertEquals('ProophTest\Done\Process\Mock\UserDictionary', $prototype->of());
     }
 
     /**
@@ -236,9 +236,9 @@ class AbstractDictionaryTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('ProophTest\Processing\Mock\UserDictionary', $prototype->of());
+        $this->assertEquals('ProophTest\Done\Process\Mock\UserDictionary', $prototype->of());
     }
 
     /**
@@ -262,9 +262,9 @@ class AbstractDictionaryTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('ProophTest\Processing\Mock\UserDictionary', $prototype->of());
+        $this->assertEquals('ProophTest\Done\Process\Mock\UserDictionary', $prototype->of());
     }
 
     /**

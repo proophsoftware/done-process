@@ -9,17 +9,17 @@
  * Date: 29.01.15 - 18:18
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 use Assert\Assertion;
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Description\DescriptionRegistry;
-use Prooph\Processing\Type\Description\NativeType;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\DescriptionRegistry;
+use Prooph\Done\Process\Type\Description\NativeType;
 
 /**
  * Class ItemClass
  *
- * @package Prooph\Processing
+ * @package Prooph\Done\Process
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class ItemClass extends String
@@ -47,7 +47,7 @@ final class ItemClass extends String
         parent::setValue($value);
 
         //and then check, if we really got an item class
-        Assertion::implementsInterface($value, 'Prooph\Processing\Type\Type');
+        Assertion::implementsInterface($value, 'Prooph\Done\Process\Type\Type');
     }
 
     /**

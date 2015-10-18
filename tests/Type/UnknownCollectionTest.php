@@ -9,15 +9,15 @@
  * Date: 09.12.14 - 19:15
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\UnknownCollection;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\UnknownCollection;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class UnknownCollectionTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class UnknownCollectionTest extends TestCase

@@ -9,17 +9,17 @@
  * Date: 08.07.14 - 21:12
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
 
 /**
  * Abstract Class SingleValue
  *
- * Prooph\ProcessingType that transports just one value
+ * Prooph\Done\Process\Type that transports just one value
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 abstract class SingleValue implements Type
@@ -131,7 +131,7 @@ abstract class SingleValue implements Type
     }
 
     /**
-     * @return mixed Type of the value is defined in Prooph\ProcessingType\Description of the type
+     * @return mixed Type of the value is defined in Prooph\Done\Process\Type\Description of the type
      */
     public function value()
     {

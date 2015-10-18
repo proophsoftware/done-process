@@ -1,5 +1,5 @@
 {
-    "name": "proophsoftware/processing",
+    "name": "proophsoftware/done-process",
     "description": "Workflow Processing Tools",
     "type": "library",
     "keywords": [
@@ -7,7 +7,7 @@
         "done",
         "middleware"
     ],
-    "homepage": "https://github.com/proophsoftware/processing",
+    "homepage": "https://github.com/proophsoftware/done-process",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
@@ -24,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Prooph\\Processing\\": "src"
+            "Prooph\\Done\\Process\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ProophTest\\Processing\\": "tests",
-            "ProophExample\\Processing\\": "examples"
+            "ProophTest\\Done\\Process\\": "tests",
+            "ProophExample\\Done\\Process\\": "examples"
         }
     }
 }

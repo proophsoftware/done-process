@@ -8,14 +8,14 @@
  * 
  * Date: 07.07.14 - 22:10
  */
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 use Codeliner\Comparison\EqualsBuilder;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
 
 /**
  * Class Property
  *
- * A property describes a child type of a Prooph\ProcessingType with a local unique name.
+ * A property describes a child type of a Prooph\Done\Process\Type with a local unique name.
  *
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
@@ -29,14 +29,14 @@ class Property
     protected $name;
 
     /**
-     * Prooph\ProcessingType of the property
+     * Prooph\Done\Process\Type of the property
      *
      * @var Type
      */
     protected $type;
 
     /**
-     * @var mixed Type of the value is defined in Prooph\ProcessingType\Description of the property
+     * @var mixed Type of the value is defined in Prooph\Done\Process\Type\Description of the property
      */
     protected $value;
 

@@ -9,17 +9,17 @@
  * Date: 09.07.14 - 20:26
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 use Assert\Assertion;
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Description\DescriptionRegistry;
-use Prooph\Processing\Type\Description\NativeType;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\DescriptionRegistry;
+use Prooph\Done\Process\Type\Description\NativeType;
 
 /**
  * Class DateTime
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class DateTime extends SingleValue

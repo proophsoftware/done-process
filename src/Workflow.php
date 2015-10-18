@@ -8,18 +8,18 @@
  * 
  * Date: 10/16/15 - 7:48 PM
  */
-namespace Prooph\Processing;
+namespace Prooph\Done\Process;
 
 use Prooph\Common\Messaging\Message;
 use Prooph\Done\ChapterLogger\ChapterLogger;
-use Prooph\Processing\Workflow\Next;
+use Prooph\Done\Process\Workflow\Next;
 
 /**
  * Class Workflow
  *
  * Pipeline implementation specifically designed to handle proophsoftware/done chapter commands.
  *
- * @package Prooph\Processing
+ * @package Prooph\Done\Process
  */
 final class Workflow 
 {

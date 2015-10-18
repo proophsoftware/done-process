@@ -9,12 +9,12 @@
  * Date: 28.01.15 - 23:24
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Class IntegerOrNull
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class IntegerOrNull extends Integer implements Optional

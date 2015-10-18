@@ -6,18 +6,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace ProophTest\Processing\Functional;
+namespace ProophTest\Done\Process\Functional;
 
-use Prooph\Processing\Functional\Func;
-use Prooph\Processing\Functional\Iterator\MapIterator;
-use Prooph\Processing\Type\String;
-use Prooph\Processing\Type\StringCollection;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Functional\Func;
+use Prooph\Done\Process\Functional\Iterator\MapIterator;
+use Prooph\Done\Process\Type\String;
+use Prooph\Done\Process\Type\StringCollection;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class FuncTest
  *
- * @package ProophTest\Processing\Functional
+ * @package ProophTest\Done\Process\Functional
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class FuncTest extends TestCase

@@ -9,16 +9,16 @@
  * Date: 08.07.14 - 21:33
  */
 
-namespace ProophTest\Processing\Type;
+namespace ProophTest\Done\Process\Type;
 
-use Prooph\Processing\Type\Boolean;
-use Prooph\Processing\Type\Exception\InvalidTypeException;
-use ProophTest\Processing\TestCase;
+use Prooph\Done\Process\Type\Boolean;
+use Prooph\Done\Process\Type\Exception\InvalidTypeException;
+use ProophTest\Done\Process\TestCase;
 
 /**
  * Class BooleanTest
  *
- * @package ProophTest\Processing\Type
+ * @package ProophTest\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class BooleanTest extends TestCase
@@ -30,7 +30,7 @@ class BooleanTest extends TestCase
     {
         $bool = Boolean::fromNativeValue(true);
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Boolean', $bool);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Boolean', $bool);
         $this->assertEquals(10, $bool->value());
     }
 
@@ -41,12 +41,12 @@ class BooleanTest extends TestCase
     {
         $boolTrue = Boolean::fromString("1");
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Boolean', $boolTrue);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Boolean', $boolTrue);
         $this->assertSame(true, $boolTrue->value());
 
         $boolFalse = Boolean::fromString("");
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Boolean', $boolFalse);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Boolean', $boolFalse);
         $this->assertSame(false, $boolFalse->value());
     }
 
@@ -63,9 +63,9 @@ class BooleanTest extends TestCase
             $prototype = $invalidTypeException->getPrototypeOfRelatedType();
         }
 
-        $this->assertInstanceOf('Prooph\Processing\Type\Prototype', $prototype);
+        $this->assertInstanceOf('Prooph\Done\Process\Type\Prototype', $prototype);
 
-        $this->assertEquals('Prooph\Processing\Type\Boolean', $prototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\Boolean', $prototype->of());
 
     }
 
@@ -104,7 +104,7 @@ class BooleanTest extends TestCase
     {
         $boolPrototype = Boolean::prototype();
 
-        $this->assertEquals('Prooph\Processing\Type\Boolean', $boolPrototype->of());
+        $this->assertEquals('Prooph\Done\Process\Type\Boolean', $boolPrototype->of());
 
         $description = $boolPrototype->typeDescription();
 

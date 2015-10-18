@@ -9,12 +9,12 @@
  * Date: 28.01.15 - 23:29
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
 /**
  * Class StringOrNull
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 final class StringOrNull extends String implements Optional

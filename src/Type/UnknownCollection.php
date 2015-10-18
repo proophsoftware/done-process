@@ -9,16 +9,16 @@
  * Date: 09.12.14 - 19:13
  */
 
-namespace Prooph\Processing\Type;
+namespace Prooph\Done\Process\Type;
 
-use Prooph\Processing\Type\Description\Description;
-use Prooph\Processing\Type\Description\DescriptionRegistry;
-use Prooph\Processing\Type\Description\NativeType;
+use Prooph\Done\Process\Type\Description\Description;
+use Prooph\Done\Process\Type\Description\DescriptionRegistry;
+use Prooph\Done\Process\Type\Description\NativeType;
 
 /**
  * Class UnknownCollection
  *
- * @package Prooph\Processing\Type
+ * @package Prooph\Done\Process\Type
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  */
 class UnknownCollection extends AbstractCollection
