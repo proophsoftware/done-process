@@ -6,29 +6,29 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  * 
- * Date: 10/16/15 - 7:57 PM
+ * Date: 10/18/15 - 9:52 PM
  */
-
 namespace Prooph\Done\Process;
 
 use Prooph\Common\Messaging\Message;
 use Prooph\Done\ChapterLogger\ChapterLogger;
+use Prooph\Done\Process\Type\Prototype;
 use Prooph\Done\Process\Type\Type;
 
 /**
- * Interface TypeHandlingMiddleware
+ * Interface PrototypeHandlingMiddleware
  *
  * @package Prooph\Done\Process
  */
-interface TypeHandlingMiddleware
+interface PrototypeHandlingMiddleware 
 {
     /**
      * @param Message $chapterCommand
-     * @param Type $data
+     * @param Prototype $data
      * @param ChapterLogger $chapterLogger
      * @param callable $next
-     * @return Type the processed $data
+     * @return Type the processed data
      */
-    public function __invoke(Message $chapterCommand, Type $data, ChapterLogger $chapterLogger, callable $next);
+    public function __invoke(Message $chapterCommand, Prototype $data, ChapterLogger $chapterLogger, callable $next);
 }
  
