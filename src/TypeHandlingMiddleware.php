@@ -27,7 +27,7 @@ interface TypeHandlingMiddleware
      * @param Type $data
      * @param ChapterLogger $chapterLogger
      * @param callable $next
-     * @return Type the processed $data
+     * @return Type|null the processed data or null if processing was not possible
      */
     public function __invoke(Message $chapterCommand, Type $data, ChapterLogger $chapterLogger, callable $next);
 }
