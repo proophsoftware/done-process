@@ -24,11 +24,8 @@ final class MapIterator extends \IteratorIterator
      */
     protected $callback;
 
-    public function __construct(\Traversable $iterator, $callback)
+    public function __construct(\Traversable $iterator, callable $callback)
     {
-        if (!is_callable($callback)) {
-            throw new \InvalidArgumentException("Provided callback should be callable. Got " . gettype($callback));
-        }
         parent::__construct($iterator);
         $this->callback = $callback;
     }
